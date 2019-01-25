@@ -11,4 +11,4 @@ You can use this script under MIT Lisence.
 
 # Reference
 
-- https://www.northtorch.co.jp/archives/432
+- https://www.northtorch.co.jp/archives/465
