@@ -3,14 +3,18 @@
 # =============================================================================
 
 # folder paths of Visual Studio
-$MSBUILD_14_PATH = "MSBuild`\14.0`\Bin"                                                         # Visual Studio 2015版のMSBuildインストールパス
-$MSBUILD_15_COMMUNITY_PATH = "Microsoft Visual Studio`\2017`\Community`\MSBuild`\15.0`\Bin"     # Visual Studio 2017 Community版のMSBuildインストールパス
+$MSBUILD_12_PATH = "MSBuild`\12.0`\Bin"                                                             # Visual Studio 2013
+$MSBUILD_14_PATH = "MSBuild`\14.0`\Bin"                                                             # Visual Studio 2015
+$MSBUILD_15_COMMUNITY_PATH = "Microsoft Visual Studio`\2017`\Community`\MSBuild`\15.0`\Bin"         # Visual Studio 2017 Community
+$MSBUILD_15_PROFESSIONAL_PATH = "Microsoft Visual Studio`\2017`\Professional`\MSBuild`\15.0`\Bin"   # Visual Studio 2017 Professional
 
 # target paths for MSBuild
 # sort by priority
 [array]$SEARCH_PATHS = @(
         $MSBUILD_14_PATH, 
-        $MSBUILD_15_COMMUNITY_PATH
+        $MSBUILD_15_COMMUNITY_PATH,
+        $MSBUILD_15_PROFESSIONAL_PATH,
+        $MSBUILD_12_PATH
     )
 
 # get full path of "Program Files" folder from OS archtechture
